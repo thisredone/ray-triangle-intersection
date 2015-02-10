@@ -1,6 +1,6 @@
 {
   "name": "ray-triangle-intersection",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "intersect a ray and triangle in 3 dimensions",
   "main": "index.js",
   "directories": {
