@@ -8,6 +8,52 @@ using the [Möller-Trumbore intersection algorithm][0]
 # example
 
 ``` js
+var intersect = require('ray-triangle-intersection');
 
+var tri = [[5,5,5],[10,15,4],[15,5,3]];
+var pt = [9,5,-5];
+var dir = [0.1,0.1,0.8];
+
+console.log(intersect([], pt, dir, tri));
 ```
 
+output:
+
+```
+var intersect = require('ray-triangle-intersection');
+
+var tri = [[5,5,5],[10,15,4],[15,5,3]];
+var pt = [9,5,-5];
+var dir = [0.1,0.1,0.8];
+
+console.log(intersect([], pt, dir, tri));
+```
+
+# methods
+
+``` js
+var intersect = require('ray-triangle-intersection')
+```
+
+## intersect(out, pt, dir, tri)
+
+Compute the intersection of the triangle `tri` and a ray described by a point
+`pt` and a direction `dir`. `try` should be an array of `[x,y,z]` coordinate
+arrays.
+
+If the ray did not intersect `tri`, return `null`.
+
+Otherwise return and update `out` with the coordinates on `tri` where the ray
+intersected.
+
+# install
+
+With [npm](https://npmjs.org) do:
+
+```
+npm install ray-triangle-intersection
+```
+
+# license
+
+MIT
