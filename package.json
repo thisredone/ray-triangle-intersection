@@ -8,7 +8,7 @@
     "test": "test"
   },
   "dependencies": {
-    "cross": "^1.0.0"
+    "gl-vec3": "^1.0.2"
   },
   "devDependencies": {
     "tape": "^3.5.0"

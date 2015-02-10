@@ -1,4 +1,6 @@
-var cross = require('cross');
+var cross = require('gl-vec3/cross');
+var dot = require('gl-vec3/dot');
+var sub = require('gl-vec3/subtract');
 
 var EPSILON = 0.000001;
 var edge1 = [0,0,0];
@@ -28,16 +30,5 @@ function intersectTriangle (out, pt, dir, tri) {
     out[0] = pt[0] + t * dir[0];
     out[1] = pt[1] + t * dir[1];
     out[2] = pt[2] + t * dir[2];
-    return out;
-}
-
-function dot (a, b) {
-    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
-}
-
-function sub (out, a, b) {
-    out[0] = a[0] - b[0];
-    out[1] = a[1] - b[1];
-    out[2] = a[2] - b[2];
     return out;
 }
