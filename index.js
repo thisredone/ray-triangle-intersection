@@ -29,9 +29,8 @@ function intersectTriangle (out, pt, dir, tri) {
     if (v < 0 || u + v > 1) return null;
     
     var t = dot(edge2, qvec) / det;
-    
-    out[0] = t;
-    out[1] = u;
-    out[2] = v;
+    out[0] = pt[0] + t * dir[0];
+    out[1] = pt[1] + t * dir[1];
+    out[2] = pt[2] + t * dir[2];
     return out;
 }

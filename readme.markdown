@@ -1,4 +1,4 @@
-# ray-triangle-intersection-test
+# ray-triangle-intersection
 
 calculate the intersection of a ray and a triangle in three dimensions
 using the [Möller-Trumbore intersection algorithm][0]
