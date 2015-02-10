@@ -1,0 +1,38 @@
+{
+  "name": "ray-triangle-intersection",
+  "version": "1.0.0",
+  "description": "intersect a ray and triangle in 3 dimensions",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "cross": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/ray-triangle-intersection.git"
+  },
+  "keywords": [
+    "3d",
+    "ray",
+    "intersect",
+    "intersection",
+    "triangle",
+    "collision",
+    "collide"
+  ],
+  "author": "substack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/substack/ray-triangle-intersection/issues"
+  },
+  "homepage": "https://github.com/substack/ray-triangle-intersection"
+}
