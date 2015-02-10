@@ -16,15 +16,13 @@ function intersectTriangle (out, pt, dir, tri) {
     cross(pvec, dir, edge2);
     var det = dot(edge1, pvec);
     
-    if (det > -EPSILON && det < EPSILON) return null;
+    if (det < EPSILON) return null;
     sub(tvec, pt, tri[0]);
-    
-    var u = dot(tvec, pvec) / det;
-    if (u < 0 || u > 1) return null;
-    
+    var u = dot(tvec, pvec);
+    if (u < 0 || u > det) return null;
     cross(qvec, tvec, edge1);
-    var v = dot(dir, qvec) / det;
-    if (v < 0 || u + v > 1) return null;
+    var v = dot(dir, qvec);
+    if (v < 0 || u + v > det) return null;
     
     var t = dot(edge2, qvec) / det;
     out[0] = pt[0] + t * dir[0];
