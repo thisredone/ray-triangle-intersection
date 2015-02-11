@@ -33,8 +33,9 @@ var intersect = require('ray-triangle-intersection')
 ## intersect(out, pt, dir, tri)
 
 Compute the intersection of the triangle `tri` and a ray described by a point
-`pt` and a direction `dir`. `try` should be an array of `[x,y,z]` coordinate
-arrays.
+`pt` and a direction `dir`.
+
+`tri` should be an array of `[x,y,z]` coordinate arrays.
 
 If the ray did not intersect `tri`, return `null`.
 
